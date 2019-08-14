@@ -38,3 +38,19 @@ function personMaker() {
   return person;
 }
 
+//Deleting Keys
+const sampleObj = {
+  foo: 'foo',
+  bar: 'bar',
+  bizz: 'bizz',
+  bang: 'bang',
+};
+
+function keyDeleter(obj) {
+  delete obj.foo;
+  delete obj.bar;
+  return obj;
+}
+
+const newObj = keyDeleter(sampleObj);
+console.log(newObj);
